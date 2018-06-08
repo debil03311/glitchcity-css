@@ -1,0 +1,242 @@
+body {
+    background: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/447530/3d3608476c517c91fd6c41ccaf9e2e1199f424c8.jpg) fixed center top #02091c;
+    background-size: cover;
+	padding-top: 50px;
+    overflow-x: hidden;
+}
+
+
+/* Hide outline when you click banners */
+img, a { outline: hidden; }
+
+
+/* Give a pointer cursor to clickable JS shit */
+span[onclick]{ cursor: pointer; }
+
+
+/*
+ *		Index page
+ */
+
+
+/* Wrapper of the board and info divs */
+#maincontainer {
+    max-width: none;
+    width: auto;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+}
+
+
+/* The divs in the wrapper */
+#index-boards, .index-links {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+
+/* Board div */
+#index-boards {
+    width: 200px;
+	background: rgba( 1, 1, 1, .96 );
+    border: solid 1px #ed145b;
+    border-left-width: 4px;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba( 237, 20, 91, 1 );
+	padding: 14px 20px;
+    columns: 1;
+}
+
+#index-boards br { display: none; }
+
+
+/* Info div */
+.index-links {
+    max-width: 660px;
+    height: 324px;
+    background: url('https://vignette.wikia.nocookie.net/va11halla/images/b/b2/Glitch_City.png/revision/latest?cb=20161221162706') rgba( 1, 1, 1, .96 );
+    background-size: cover;
+    text-align: justify;
+    vertical-align: top;
+    border: solid 1px #ed145b;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba( 237, 20, 91, 1 );
+	padding: 14px 20px;
+    line-height: 1em;
+}
+
+
+/* News under the banner */
+#index-news{ 
+    background: rgba( 1, 1, 1, .84 );
+    padding: 10px;
+}
+
+
+/* Footer */
+footer { 
+    position: fixed;
+    bottom: 0;
+    right:  0;
+    background: rgba( 1, 1, 1, .9 );
+	display: inline-block; 
+    padding: 10px;
+}
+
+
+/*
+ *		Shit on other pages
+ */
+
+/* Top board bar */
+#boardcontainer {
+    position: fixed;
+    top:  0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    border-bottom: solid 1px #BBB;
+    padding: 10px 0 8px 14px;
+    z-index: 2;
+}
+
+
+/* Hide horizontal lines bc they're not aesthetic enough for my tastes */
+hr { display: none; }
+
+
+/*
+ *		Board index
+ */
+
+
+/* Wrapper */
+#sitecorner {
+	position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 90vh;
+    background: rgba( 1, 1, 1, .8 );
+    border: none;
+    box-shadow: none;
+    text-align: left !important;
+}
+
+
+/* Banners */
+img {
+	width:  395px;
+    height: 124px;
+}
+
+img[alt="Picture of crying Dorothy"] {
+	width:  395px;
+    height: 474px;
+}
+
+img.burg {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[src="/static/burg.jpg"] {
+	width:  210px;
+    height: 320px;
+}
+
+img[src="/static/angryburg.jpg"] {
+	width:  210px;
+    height: 268px;
+}
+
+/* Thread colors */
+a[data-replies] {
+	border-left: solid 4px rgba( 21, 223, 182, .8 );
+    padding: 6px 20px;
+}
+
+a.locked { border-left-color: rgba( 21, 223, 182, .24 ); }
+
+
+#boardtitle { 
+    color: #ed145b; 
+	background: #010101;
+    padding: 8px;
+}
+
+
+/* Start thread / close button */
+#newthread { padding: 10px;}
+
+
+/* Thread start box */
+.ui-widget-content.ui-draggable.ui-draggable-handle {
+	width: 356px !important;
+    border: solid 1px #ed145b !important;
+    margin-top: 10px;
+    padding: 20px !important;
+}
+
+/* Text inputs */
+form[name="newthread"] input, textarea {
+    border-radius: 0 !important; 
+    margin: 6px 0 10px 0; 
+    background: #000 !important;
+    border: solid 1px #BBB !important;
+    padding: 20px 10px 0 12px;
+}
+
+form[name="newthread"] textarea {
+	padding-left: 20px !important;
+}
+
+
+/* Submit button */
+form[name="newthread"] input#submit { 
+    margin-right: 4px;
+	padding: 4px;
+}
+
+
+#wordcount {
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+
+form[action="/reply"] span.comment-styled {
+	position: absolute;
+    left: 20px;
+}
+
+form[action="/reply"] {
+    width: 40%;
+}
+
+
+/* Comment submit button */
+.button_styled.jsunhide {
+	float: left !important;
+}
+
+
+#reply_box {
+	margin-top: 30px;
+}
+
+div.comment[id] {
+	margin-left: 0px;
+    width: 80%;
+    text-align: justify;
+}
+
+.burg {
+    margin-left: 0 !important;
+}
+
+
+/* debil was here x^D epic */
+/* lone_meme <3 */
